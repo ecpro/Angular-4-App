@@ -8,7 +8,9 @@ import { MenuComponent } from "../menu/menu.component";
 
 export const routes: Routes = [
     { path: 'home', component: HomeComponent},
-    { path: 'contact', component: ContactComponent},
+    { path: 'contactus', component: ContactComponent},
+    { path: 'aboutus', component: AboutComponent},
     { path: 'menu', component: MenuComponent},
+    { path: 'dishdetail/:id', component: DishdetailComponent},
     { path: '', redirectTo: '/home', pathMatch:'full'}
 ]
