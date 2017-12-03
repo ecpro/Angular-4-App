@@ -56,6 +56,10 @@
 
   <div fxFlex>
     <h2>Corporate Leadership</h2>
+    <div [hidden]="leaders">
+      <md-spinner></md-spinner>
+      <h4>Loading . . . Please Wait</h4>
+    </div>
     <md-card *ngFor="let leader of leaders">
       <md-card-header>
         <md-card-title>{{leader.name}}</md-card-title>
