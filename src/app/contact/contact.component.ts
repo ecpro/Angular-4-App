@@ -44,6 +44,7 @@ export class ContactComponent implements OnInit {
 
   constructor(private _fb: FormBuilder) {
     this.createForm();
+    console.log(this.feedbackForm);
   }
 
   ngOnInit() {
@@ -65,7 +66,7 @@ export class ContactComponent implements OnInit {
     .subscribe(data => this.onValueChanged(data));
   }
 
-  onValueChanged(data:any) {
+  onValueChanged(data?:any) {
     if(!this.feedbackForm) return;
     const form = this.feedbackForm;
     for(const field in this.formErrors) {
@@ -93,6 +94,9 @@ export class ContactComponent implements OnInit {
       contacttype: 'None',
       message: ''
     });
+
+    this.feedbackForm.markAsPristine();
+    this.feedbackForm.markAsUntouched();
   }
 
 }

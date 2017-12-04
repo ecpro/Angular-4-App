@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { MaterialModule } from "@angular/material";
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { HttpClientModule } from "@angular/common/http";
 
 import 'hammerjs';
 
@@ -43,7 +44,8 @@ import { AppRoutingModule } from "./app-routing/app-routing.module";
     FlexLayoutModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [DishService, PromotionService, LeaderService],
   bootstrap: [AppComponent]
