@@ -23,6 +23,7 @@ import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
 
 import { AppRoutingModule } from "./app-routing/app-routing.module";
+import { HighlightDirective } from './directives/highlight.directive';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { AppRoutingModule } from "./app-routing/app-routing.module";
     AboutComponent,
     HomeComponent,
     ContactComponent,
-    LoginComponent
+    LoginComponent,
+    HighlightDirective
   ],
   entryComponents: [LoginComponent],
   imports: [
